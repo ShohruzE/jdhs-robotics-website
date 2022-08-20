@@ -47,8 +47,13 @@ svg {
     display: block;
 }
 
+input, textarea {
+    width: 100%;
+    display: block;
+}
+
 .container {
-    max-width: 112.5rem; /* 1800px */
+    max-width: 93.75%; /* 1800px */
     margin: 0 auto;
 }
 
@@ -243,7 +248,7 @@ nav ul li {
 .sub-units {
     background-color: var(--color-secondary);
     color: var(--color-accent);
-    padding: 5vw;
+    padding: 5vw 0.125em;
 }
 
 .sub-units .sub-units-heading p {
@@ -452,20 +457,83 @@ nav ul li {
     flex-wrap: wrap;
 }
 
-.contact form .grid {
-    display: grid;
-    grid-template-columns: 1fr;
+.contact form .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 0.5em;
+}
+
+.contact form {
+    width: 600px;
 }
 
 .contact form input[type="text"], 
 .contact form textarea[type="text"] {
-    display: block;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid var(--color-accent);
-    padding: 1em 0.25em;
+    padding: 0.5em 0.25em;
+
+    color: var(--color-accent);
+    font-family: inherit;
+    letter-spacing: var(--letter-spacing);
+    font-weight: var(--fw-light);
+    font-size: var(--fs-p);
 }
+
+.contact form textarea[type="text"] {
+    padding: 0.5em 0.25em;
+    height: 200px;
+    resize: none;
+}
+
+.contact .input {
+    width: 600px;
+    transition: 1s ease;
+}
+
+.contact .input textarea {
+    transition: 1s ease;
+}
+
+.contact form .submit {
+    width: 100%;
+    transition: 1s ease;
+
+    background-color: var(--color-accent);
+    border: none;
+    color: var(--color-tertiary);
+    font-family: inherit;
+    font-weight: var(--fw-regular);
+    font-size: 1rem;
+    padding: 0.5em 0;
+    font-weight: var(--fw-regular);
+
+    cursor: pointer; 
+}
+
+.contact form .submit:hover {
+    color: var(--color-tertiary);
+    background-color: var(--color-accent);
+}
+
+@media (max-width: 750px) {
+
+    .contact .input {
+        width: 200px;
+    }
+    .contact form textarea[type="text"] {
+        height: 100px;
+    }
+    .contact form .submit {
+        width: 200px;
+    }
+}
+
+
+
 
 .contact form input[type="text"]:hover, 
 .contact form input[type="text"]:focus,
@@ -479,9 +547,14 @@ nav ul li {
     color: var(--color-accent);
 }
 
-.contact .container .grid input[type="text"] {
-    width: 600px;
-    height: auto;
+.contact .address {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.contact .maps-iframe {
+    display: flex; 
+    justify-content: center;
 }
 
 
