@@ -519,6 +519,7 @@ nav ul li {
     background-color: var(--color-accent);
 }
 
+
 @media (max-width: 750px) {
 
     .contact .input {
@@ -531,8 +532,6 @@ nav ul li {
         width: 200px;
     }
 }
-
-
 
 
 .contact form input[type="text"]:hover, 
