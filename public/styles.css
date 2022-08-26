@@ -89,9 +89,11 @@ header nav ul {
     gap: 1.5em;
 }
 
-.nav-logo-content h3 {
+.nav-logo-content h3 a {
     font-size: var(--fs-subheading);
     font-weight: var(--fw-regular);
+    color: var(--color-accent);
+    text-decoration: none;
 }
 
 .nav-logo-content p {
@@ -557,6 +559,8 @@ nav ul li {
 }
 
 
+
+
 /* *************** FOOTER ************ */
 footer {
     background-color: var(--color-secondary);
@@ -567,4 +571,28 @@ footer {
 .footer-content {
     text-align: center;
     font-weight: var(--fw-light);
+}
+
+
+
+
+
+
+/* *************** OUR ROBOTS PAGE ************ */
+
+.robot-tile {
+    padding: 5em;
+    color: var(--color-accent);
+}
+
+.tile-order-1 {
+    background-color: var(--color-primary);
+}
+
+.tile-order-2 {
+    background-color: var(--color-secondary);
+}
+
+.tile-order-3 {
+    background-color: var(--color-tertiary);
 }
