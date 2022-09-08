@@ -61,6 +61,12 @@ h1 {
     margin-bottom: 1em;
 }
 
+/* **** ICONS **** */
+.fa-instagram
+.fa-instagram::before,
+.fa-instagam::after {
+    color: var(--color-accent);
+}
 
 /* *************** NAVIGATION ************ */
 header {
@@ -443,7 +449,7 @@ nav ul li {
 .contact {
     background-color: var(--color-primary);
     color: var(--color-accent);
-    padding: 6em;
+    padding: 5em 0 2em 0;
 }
 
 .contact .content .heading {
@@ -551,11 +557,17 @@ nav ul li {
 .contact .address {
     margin: 2em 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
 }
 
 .contact .maps-iframe {
     display: flex; 
     justify-content: center;
+
+    margin: 2em 0;
 }
 
 
