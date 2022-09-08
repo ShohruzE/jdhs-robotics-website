@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FRC 333 | Megaladons</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
@@ -15,14 +15,12 @@
                 <div>
                     <i></i>
                     <div class = "nav-logo-content">
-                        <h3>MEGALODONS FRC 333</h3>
+                        <h3><a href = "../index.html">MEGALODONS FRC 333</a></h3>
                         <p>Brooklyn, New York</p>
                     </div>
                 </div>
                 <ul>
-                    <li><a href = "#">Our Robots</a></li>
-                    <li><a href = "#">Shop</a></li>
-                    <li><a href = "#">More</a></li>
+                    <li><a href = "../robots.html">Our Robots</a></li>
                     <li class = "nav-email">frcteam333themegalodons@gmail.com</li>
                 </ul>
             </nav>
@@ -40,7 +38,7 @@
     <section class = "about-us">
         <div class = "container flex">
             <div class = "about-us-image">
-                <img src = "https://images.unsplash.com/photo-1510146758428-e5e4b17b8b6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+                <img src = "../images/about-us.jpg">
             </div>
             <div class = "about-us-content">
                 <h2>ABOUT US</h2>
@@ -54,12 +52,11 @@
     <section class = "spotlight">
         <div class = "flex">
             <div class = "spotlight-image">
-                <img src="images/unsplash.jpg">
+                <img src="../images/mako.jpg">
             </div>
             <div class="spotlight-content">
                 <h2>Spotlight: Mako(Rapid React)</h2>
-                <p>Our 2022 Rapid React robot named 'Mako', is a unique robot with two synchronized catapults. 
-                    I guess you can say that this robot is "double trouble".</p>
+                <p>Mako was our 2022 season competitor which featured a unique, double synchronized catapult design, reminiscient of medieval times which earned us the Creativity Award at the New York Tech Valley Regional.</p>
                 <a href = "#">Learn More</a>
             </div>
         </div>
@@ -129,7 +126,7 @@
         <div class = "container grid">
 
             <div class = "member">
-                <img src = "images/unsplash.jpg">
+                <img src = "../images/unsplash.jpg">
                 <div class = "member-info">
                     <h2 class = "name">MATTHEW LEE</h2>
                     <p class = "role">Team Captain | Chief Mechanics</p>
@@ -137,7 +134,7 @@
                 </div>
             </div>
             <div class = "member">
-                <img src = "images/unsplash.jpg">
+                <img src = "../images/unsplash.jpg">
                 <div class = "member-info">
                     <h2 class = "name">YESI</h2>
                     <p class = "role">Driver | Lead Programmer</p>
@@ -148,7 +145,7 @@
 
         
             <div class = "member">
-                <img src = "images/unsplash.jpg">
+                <img src = "../images/unsplash.jpg">
                 <div class = "member-info">
                     <h2 class = "name">AQRYF</h2>
                     <p class = "role">Operator</p>
@@ -156,7 +153,7 @@
                 </div>
             </div>
             <div class = "member">
-                <img src = "images/unsplash.jpg">
+                <img src = "../images/unsplash.jpg">
                 <div class = "member-info">
                     <h2 class = "name">VINCENT WONG</h2>
                     <p class = "role">Machinist | Scouting Data Entry</p>
@@ -175,7 +172,7 @@
 
         <div class = "cards">
             <div class = "card">
-                <img src = "images/unsplash.jpg">
+                <img src = "../images/nyc-2022.jpg">
                 <div class = "card-content">
                     <h3 class = "event-name">New York City Regional</h3>
                     <p class = "date-location">Thu, Apr 07 | New York City, NY</p>
@@ -183,7 +180,7 @@
                 <div><a class = "details" href = "#">Details</a></div>
             </div>
             <div class = "card">
-                <img src = "images/unsplash.jpg">
+                <img src = "../images/sbpli-2022.jpg">
                 <div class = "card-content">
                     <h3 class = "event-name">SBPLI Long Island Regional #2</h3>
                     <p class = "date-location">Thu, Mar 24 | Hempstead, NY</p>
@@ -191,7 +188,7 @@
                 <div><a class = "details" href = "#">Details</a></div>
             </div>
             <div class = "card">
-                <img src = "images/unsplash.jpg">
+                <img src = "../images/about-us.jpg">
                 <div class = "card-content">
                     <h3 class = "event-name">New York Tech Valley Regional</h3>
                     <p class = "date-location">Sun, Mar 13 | Albany, NY</p>
@@ -203,29 +200,37 @@
 
     <section class = "contact">
         <div class = "content">
-            <img src = "https://images.unsplash.com/photo-1510146758428-e5e4b17b8b6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+            <img src = "../images/team-banner-footer.jpg">
             <h2 class = "heading">Contact Us</h2>
             <form class = "container" >
-                <div class = "grid">
+                <div class = "flex">
+                    
                     <div class = "name">
                         <label for="name">Name *</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        <div class = "input">
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
                     </div>
                     <div class = "email">
                         <label for="email">Email *</label>
-                        <input type="text" id="email" name="email" placeholder="Enter preferred email" required>
+                        <div class = "input">
+                            <input type="text" id="email" name="email" placeholder="Enter preferred email" required>
+                        </div>
                     </div>
-                
                     <div class = "subject">
                         <label for="subject">Subject *</label>
-                        <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+                        <div class="input">
+                            <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+                        </div>
                     </div>
                     <div class = "message">
                         <label for="email">Message *</label>
-                        <textarea type="text" id="message" name="message" placeholder="Enter your message" required></textarea>
+                        <div class="input">
+                            <textarea type="text" id="message" name="message" placeholder="Enter your message" required></textarea>
+                        </div>
                     </div>
 
-                    <button type = "submit">Submit</button>
+                    <button class = "submit" type = "submit">Submit</button>
                 </div>
             </form>
 
@@ -235,6 +240,11 @@
                 <i>Instagram</i>
             </div>
         </div>
+
+        <div class="maps-iframe">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17137.920883575585!2d-73.99363886101257!3d40.59491453441866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2445320bb3765%3A0x129a1d382adf6750!2sJohn%20Dewey%20High%20School!5e0!3m2!1sen!2sus!4v1660917891887!5m2!1sen!2sus" width="940" height="340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
     </section>
 
 
