@@ -183,10 +183,20 @@ nav ul li a:hover {
     width: 100%;
     margin: 0 auto;
     height: auto;
+    background-color: var(--color-accent);
+}
+
+@media (min-width: 1532px) {
+
+    .about.us .container img {
+        display: block;
+    }
+    .about.us .container {
+        flex-direction: column;
+    }
 }
 
 .about-us-content {
-    background-color: var(--color-accent);
     width: 100%;
     max-width: 62.5em;
     height: auto;
@@ -195,7 +205,7 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     gap: 1em;
-    padding: 10%;
+    margin: 10%;
 }
 
 .about-us-content h2 { 
@@ -227,18 +237,47 @@ nav ul li a:hover {
 /* *************** SPOTLIGHT ************ */
 .spotlight {
     background-color: var(--color-tertiary);
-    padding: 7.5vw 0;
+    padding: 5em 1em;
 }
 
 .spotlight img {
     width: 100%;
     max-width: 500px;
+    min-width: 450px;
     height: auto;
+    padding: 0 0 0 5em;
 }
 
 .spotlight .flex {
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 899px) {
+
+    .spotlight {
+        padding: 1em;
+    }
+    .spotlight .flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .spotlight img {
+        min-width: 100px;
+        padding: 0;
+    }
+
+    .spotlight-content {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .spotlight-content a {
+        text-align: center;
+    }
 }
 
 .spotlight-content {
@@ -287,7 +326,7 @@ nav ul li a:hover {
 .sub-units {
     background-color: var(--color-secondary);
     color: var(--color-accent);
-    padding: 5vw 0.125em;
+    padding: 5em 0.625em;
 }
 
 .sub-units .sub-units-heading p {
@@ -301,25 +340,16 @@ nav ul li a:hover {
     margin-bottom: 2em;
 }
 
-.sub-units .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 1fr);
-    gap: 0.75em;
+.sub-units .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    flex-wrap: wrap;
 }
-
-
-@media (min-width: 1054px) {
-
-    .sub-units .grid {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
 
 .sub-unit-text {
-    background-color: var(--color-tertiary);
     color: var(--color-accent);
-
 }
 
 .sub-units .sub-unit-text h2 {
@@ -332,13 +362,19 @@ nav ul li a:hover {
     letter-spacing: var(--letter-spacing);
 }
 
-.sub-units .sub-unit-text {
-    text-align: left;
+.sub-units .item {
+    max-width: 100%;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 1em;
-    padding: 10%;
+    text-align: center;
+}
+
+.icon {
+    font-size: 2em;
 }
 
 
@@ -444,6 +480,12 @@ nav ul li a:hover {
     padding: 4em;
 }
 
+@media (max-width: 628px) {
+    .current-season .cards {
+        padding: 4em 1em;
+    }
+}
+
 .current-season .cards .card {
     text-align: center;
     max-width: 500px;
@@ -481,6 +523,13 @@ nav ul li a:hover {
     background-color: var(--color-primary);
     color: var(--color-accent);
     padding: 5em 0 2em 0;
+}
+
+.contact img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 1em;
 }
 
 .contact .content .heading {
@@ -586,20 +635,28 @@ nav ul li a:hover {
 }
 
 .contact .address {
-    margin: 2em 0;
+    margin: 1em;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 2em;
+}
+
+.contact .address .fa-instagram {
+    font-size: 1rem;
+    color: var(--color-accent);
 }
 
 .contact .maps-iframe {
     display: flex; 
     justify-content: center;
 
-    margin: 2em 0;
+    margin: 1em;
 }
+
+
 
 
 
