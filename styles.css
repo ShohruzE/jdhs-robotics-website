@@ -187,16 +187,6 @@ nav ul li a:hover {
     background-color: var(--color-accent);
 }
 
-@media (min-width: 1532px) {
-
-    .about.us .container img {
-        display: block;
-    }
-    .about.us .container {
-        flex-direction: column;
-    }
-}
-
 .about-us-content {
     width: 100%;
     max-width: 62.5em;
@@ -233,6 +223,16 @@ nav ul li a:hover {
     display: flex;
 }
 
+@media (min-width: 1532px) {
+
+    .about.us .container img {
+        display: block;
+    }
+    .about.us .container {
+        flex-direction: column;
+    }
+}
+
 
 
 /* *************** SPOTLIGHT ************ */
@@ -252,33 +252,6 @@ nav ul li a:hover {
 .spotlight .flex {
     display: flex;
     justify-content: center;
-}
-
-@media (max-width: 899px) {
-
-    .spotlight {
-        padding: 1em;
-    }
-    .spotlight .flex {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .spotlight img {
-        min-width: 100px;
-        padding: 0;
-    }
-
-    .spotlight-content {
-        padding: 0;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .spotlight-content a {
-        text-align: center;
-    }
 }
 
 .spotlight-content {
@@ -319,6 +292,33 @@ nav ul li a:hover {
     padding: 0.5em 1em;
     border: 1px solid var(--color-accent);
     border-radius: 1.25rem;
+}
+
+@media (max-width: 991px) {
+
+    .spotlight {
+        padding: 1em;
+    }
+    .spotlight .flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .spotlight img {
+        min-width: 100px;
+        padding: 0;
+    }
+
+    .spotlight-content {
+        padding: 2em;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .spotlight-content a {
+        text-align: center;
+    }
 }
 
 
