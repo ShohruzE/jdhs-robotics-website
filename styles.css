@@ -134,15 +134,20 @@ nav ul li {
 
 nav ul li a {
     transition: all 0.1s ease;
+    font-size: 1.35rem;
 }
 
 nav ul li a:hover {
     border-bottom: 2px solid var(--color-accent);
 }
 
-.nav-email {
-    border-bottom: var(--color-secondary) 2px solid;
-    padding-bottom: 0.125rem;
+nav ul li.nav-email a {
+    background-color: var(--color-accent);
+    font-weight: var(--fw-regular);
+    color: var(--color-primary);
+    padding: 0.5em 1em;
+    border-radius: 0.75rem;
+    transition: none;
 }
 
 /* *************** HERO ************ */
@@ -462,14 +467,13 @@ nav ul li a:hover {
 .current-season {
     background-color: var(--color-tertiary);
     color: var(--color-accent);
-    border-top: 1px solid var(--color-accent);
 }
 
 .current-season-heading {
     text-align: center;
     font-size: var(--fs-heading);
     font-weight: var(--fw-regular);
-    margin: 2em 0;
+    padding: 2em 0;
 }
 
 .current-season .cards {
@@ -478,7 +482,7 @@ nav ul li a:hover {
     align-items: center;
     flex-wrap: wrap;
     gap: 2em;
-    padding: 4em;
+    padding: 0;
 }
 
 @media (max-width: 628px) {
@@ -521,16 +525,9 @@ nav ul li a:hover {
 
 /* *************** CONTACT ************ */
 .contact {
-    background-color: var(--color-primary);
-    color: var(--color-accent);
+    background-color: var(--color-accent);
+    color: var(--color-tertiary);
     padding: 5em 0 2em 0;
-}
-
-.contact img {
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    margin: 1em;
 }
 
 .contact .content .heading {
@@ -562,10 +559,10 @@ nav ul li a:hover {
 .contact form textarea[type="text"] {
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid var(--color-accent);
+    border-bottom: 1px solid var(--color-tertiary);
     padding: 0.5em 0.25em;
 
-    color: var(--color-accent);
+    color: var(--color-tertiary);
     font-family: inherit;
     letter-spacing: var(--letter-spacing);
     font-weight: var(--fw-light);
@@ -579,6 +576,7 @@ nav ul li a:hover {
 }
 
 .contact .input {
+    color: var(--color-tertiary);
     width: 600px;
     transition: 1s ease;
 }
@@ -591,9 +589,9 @@ nav ul li a:hover {
     width: 100%;
     transition: 1s ease;
 
-    background-color: var(--color-accent);
+    background-color: var(--color-tertiary);
     border: none;
-    color: var(--color-tertiary);
+    color: var(--color-accent);
     font-family: inherit;
     font-weight: var(--fw-regular);
     font-size: 1rem;
@@ -627,12 +625,12 @@ nav ul li a:hover {
 .contact form input[type="text"]:focus,
 .contact form textarea[type="text"]:hover,
 .contact form textarea[type="text"]:focus {
-    border: 1px solid var(--color-accent);
+    border: 1px solid var(--color-tertiary);
 }
 
 .contact form input::placeholder, 
 .contact form textarea::placeholder {
-    color: var(--color-accent);
+    color: var(--color-tertiary);
 }
 
 .contact .address {
@@ -647,7 +645,7 @@ nav ul li a:hover {
 
 .contact .address .fa-instagram {
     font-size: 1rem;
-    color: var(--color-accent);
+    color: var(--color-tertiary);
 }
 
 .contact .maps-iframe {
@@ -664,9 +662,10 @@ nav ul li a:hover {
 
 /* *************** FOOTER ************ */
 footer {
-    background-color: var(--color-secondary);
+    background-color: var(--color-tertiary);
+    color: var(--color-accent);
     padding: 2em;
-    border-top: var(--color-accent) 1px solid;
+    border-top: var(--color-primary) 1px solid;
 }
 
 .footer-content {
