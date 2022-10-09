@@ -134,7 +134,7 @@ nav ul li {
 
 nav ul li a {
     transition: all 0.1s ease;
-    font-size: 1.35rem;
+    font-size: 1.125rem;
 }
 
 nav ul li a:hover {
@@ -148,6 +148,19 @@ nav ul li.nav-email a {
     padding: 0.5em 1em;
     border-radius: 0.75rem;
     transition: none;
+}
+
+nav ul li.nav-email a:hover {
+    background-color: var(--color-accent-dark);
+    border: none;
+}
+
+nav ul li.current {
+    border-bottom: 1px solid var(--color-accent);
+}
+
+@media (max-width: 750px) {
+
 }
 
 /* *************** HERO ************ */
@@ -299,6 +312,10 @@ nav ul li.nav-email a {
     border-radius: 1.25rem;
 }
 
+.spotlight-content a:hover {
+    background-color: var(--color-accent-dark);
+}
+
 @media (max-width: 991px) {
 
     .spotlight {
@@ -336,6 +353,7 @@ nav ul li.nav-email a {
 }
 
 .sub-units .sub-units-heading p {
+    margin-top: -1.25em;
     font-size: var(--fs-subheading);
     font-weight: var(--fw-light);
 }
@@ -389,7 +407,7 @@ nav ul li.nav-email a {
 .team-members {
     background-color: var(--color-tertiary);
     color: var(--color-accent);
-    padding: 5vw;
+    padding: 5em 0;
 }
 
 .team-members-heading {
@@ -402,6 +420,7 @@ nav ul li.nav-email a {
 }
 
 .team-members .team-members-heading p {
+    margin: -1.25em 0 3em 0;
     font-size: var(--fs-subheading);
     font-weight: var(--fw-light);
 }
@@ -465,8 +484,9 @@ nav ul li.nav-email a {
 
 /* *************** CURRENT SEASON ************ */
 .current-season {
-    background-color: var(--color-tertiary);
+    background-color: var(--color-primary);
     color: var(--color-accent);
+    padding: 0 0 4em 0;
 }
 
 .current-season-heading {
@@ -474,6 +494,10 @@ nav ul li.nav-email a {
     font-size: var(--fs-heading);
     font-weight: var(--fw-regular);
     padding: 2em 0;
+}
+
+.current-season .current-season-heading h1 {
+    margin: 0;
 }
 
 .current-season .cards {
@@ -487,7 +511,7 @@ nav ul li.nav-email a {
 
 @media (max-width: 628px) {
     .current-season .cards {
-        padding: 4em 1em;
+        padding: 0 1em 1em 1em;
     }
 }
 
@@ -504,6 +528,9 @@ nav ul li.nav-email a {
     background-color: var(--color-secondary);
     font-size: var(--fs-p);
     padding: 0.5rem 2rem;
+}
+.current-season .cards .card .details:hover {
+    background-color: #ed6e14d3;
 }
 
 .current-season .cards .card .card-content {
@@ -527,7 +554,11 @@ nav ul li.nav-email a {
 .contact {
     background-color: var(--color-accent);
     color: var(--color-tertiary);
-    padding: 5em 0 2em 0;
+    padding: 3em 0 3em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
 }
 
 .contact .content .heading {
@@ -587,7 +618,7 @@ nav ul li.nav-email a {
 
 .contact form .submit {
     width: 100%;
-    transition: 1s ease;
+    transition: 0.5s ease;
 
     background-color: var(--color-tertiary);
     border: none;
@@ -603,20 +634,20 @@ nav ul li.nav-email a {
 
 .contact form .submit:hover {
     color: var(--color-tertiary);
-    background-color: var(--color-accent);
+    background-color: var(--color-accent-dark);
 }
 
 
 @media (max-width: 750px) {
 
     .contact .input {
-        width: 200px;
+        width: 300px;
     }
     .contact form textarea[type="text"] {
         height: 100px;
     }
     .contact form .submit {
-        width: 200px;
+        width: 300px;
     }
 }
 
@@ -642,9 +673,15 @@ nav ul li.nav-email a {
     flex-wrap: wrap;
     gap: 2em;
 }
+.contact .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
 
-.contact .address .fa-instagram {
-    font-size: 1rem;
+.contact .socials i {
+    font-size: 1.5rem;
     color: var(--color-tertiary);
 }
 
@@ -655,6 +692,27 @@ nav ul li.nav-email a {
     margin: 1em;
 }
 
+@media (max-width: 1400px) {
+
+    .contact {
+        flex-direction: column;
+        gap: 2em;
+        padding: 1em;
+    }
+
+
+}
+
+@media (max-width: 650px) {
+    .contact .maps-iframe {
+        width: 340px;
+    }
+    .contact .address {
+        display: block;
+    }
+}
+
+
 
 
 
@@ -662,10 +720,10 @@ nav ul li.nav-email a {
 
 /* *************** FOOTER ************ */
 footer {
-    background-color: var(--color-tertiary);
+    background-color: var(--color-primary);
     color: var(--color-accent);
     padding: 2em;
-    border-top: var(--color-primary) 1px solid;
+    border-top: var(--color-accent) 1px solid;
 }
 
 .footer-content {
@@ -738,6 +796,29 @@ footer {
     font-weight: var(--fw-light);
     letter-spacing: var(--letter-spacing);
 }
+
+.robot-tile .robot-info a {
+    text-decoration: none;
+    width: fit-content;
+    padding: 0.5em 1em;
+    border-radius: 0.5rem;
+    background-color: var(--color-accent);
+}
+.robot-tile .robot-info a:hover {
+    background-color: var(--color-accent-dark);
+}
+
+.robot-tile.tile-order-1 .robot-info a {
+    color: var(--color-primary);
+}
+.robot-tile.tile-order-2 .robot-info a {
+    color: var(--color-secondary);
+}
+.robot-tile.tile-order-3 .robot-info a {
+    color: var(--color-tertiary);
+}
+
+
 
 .robot-tile img {
     object-fit: cover;
