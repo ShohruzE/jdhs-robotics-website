@@ -1,3 +1,3 @@
-# JDHS-Robotics-Website
+# FRC 333 Website
 
-First-ever JDHS Robotics Website developed by Shohruz Ernazarov
+First-ever FRC 333 Website developed by Shohruz Ernazarov
