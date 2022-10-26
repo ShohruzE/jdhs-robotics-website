@@ -592,6 +592,37 @@ nav .hamburger {
 
 
 
+/* *************** SPONSORS ************ */
+
+.sponsors {
+    background-color: var(--color-tertiary);
+    color: var(--color-accent);
+    padding: 0 0 2em 0;
+}
+
+.sponsors-heading {
+    text-align: center;
+    font-size: var(--fs-heading);
+    font-weight: var(--fw-regular);
+    padding: 2em 0 0 0;
+}
+
+.sponsors-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.sponsors img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+
+
 /* *************** CONTACT ************ */
 .contact {
     background-color: var(--color-accent);
