@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Official website of FRC Team 333, The Megalodons. Founded in 1998, the John Dewey High School robotics team aims to equip a community of students passionate 
-    about science and technology with the skills and initiative to become the next generation of leaders and create positive change in their respective career fields.">
-    <title>FRC 333 | Megaladons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Official website of FRC Team 333, The Megalodons. Founded in 1998, the John Dewey High School robotics team aims to equip a community of students passionate about science and technology with the skills and initiative to become the next generation of leaders and create positive change in their respective career fields.">
+    <title>FRC 333 | The Megalodons</title>
     <link rel="icon" href="icons/frc-logo.png">
     <link rel="stylesheet" href="../styles.css">
+
+    <script src = "../script.js" defer></script>
 
     <script src="https://kit.fontawesome.com/5181052558.js" crossorigin="anonymous"></script> <!-- FONT AWESOME -->
 </head>
@@ -20,16 +21,20 @@
                 <div class = "flex-start">
                     <a href = "../index.html"><img class = "logo" src = "../icons/frc-logo.png"></a>
                     <div class = "nav-logo-content">
-                        <h3><a href = "../index.html">FRC 333 MEGALODONS</a></h3>
+                        <h3><a href = "../index.html">FRC 333</a></h3>
                         <p>Brooklyn, New York</p>
                     </div>
                 </div>
+
                 
+
                 <ul>
-                    <li><a href = "../robots.html">Our Robots</a></li>
-                    <li><a href = "https://eversharkny.com/" target="_blank">Merch</a></li>
-                    <li class = "nav-email"><a href = "../index.html#contact-us">Contact Us</a></li>
+                    <li class = "navbar-links"><a href = "../robots.html">Our Robots</a></li>
+                    <li class = "navbar-links"><a href = "https://eversharkny.com/" target="_blank">Merch</a></li>
+                    <li class = "navbar-links nav-email"><a href = "../index.html#contact-us">Contact Us</a></li>
                 </ul>
+
+                <i class="fa-solid fa-bars hamburger"></i>
             </nav>
         </div>
     </header>
@@ -49,7 +54,7 @@
             </div>
             <div class = "about-us-content">
                 <h2>ABOUT US</h2>
-                <p>Founded in 1998, the John Dewey High School robotics team aims to equip a community of students passionate about science and technology with the skills and initiative to become the next generation 
+                <p>Founded in 1998, the John Dewey High School FIRST Robotics Challenge(FRC) robotics team aims to equip a community of students passionate about science and technology with the skills and initiative to become the next generation 
                     of leaders and create positive change in their respective career fields.</p>
             </div>
         </div>
@@ -85,7 +90,7 @@
                 <h2>MECHANICAL</h2>
                 <div class = "sub-unit-text">
                     <p>Students on our mechanical team get hands-on work with our robots and machines, from assembling the drivetrain to operating industry-grade machinery in our workshop such as an X-carve, laser cutter,
-                        CNC cutter, chop saws, drill presses, 3D-printers(including a Stratasys F270).</p>
+                        CNC cutter, chop saws, drill presses, and 3D-printers(including a Stratasys F270).</p>
                 </div>
             </div>
 
@@ -142,7 +147,8 @@
         </div>
     </section>
 
-
+    
+    <!--
     <section class = "team-members">
         <div class = "team-members-heading">
             <h1>TEAM 333</h1>
@@ -188,6 +194,7 @@
         
         </div>
     </section>
+    -->
 
 
     <section class = "current-season">
@@ -226,7 +233,7 @@
     <section class = "contact">
         <div class = "content">
             <h2 class = "heading">Contact Us</h2>
-            <form id = "contact-us"class = "container" action="mailto:frcteam333themegalodons@gmail.com" method="POST" enctype="text/plain">
+            <form id = "contact-us"class = "container" action="mailto:frcteam333themegalodons@gmail.com" method="POST" enctype="text/plain" data-netlify="true">
                 <div class = "flex">
                     
                     <div class = "name">
