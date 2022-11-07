@@ -528,7 +528,7 @@ nav .hamburger {
 .current-season {
     background-color: var(--color-primary);
     color: var(--color-accent);
-    padding: 0 0 4em 0;
+    padding: 0 0 3em 0;
 }
 
 .current-season-heading {
@@ -548,7 +548,7 @@ nav .hamburger {
     align-items: center;
     flex-wrap: wrap;
     gap: 2em;
-    padding: 0;
+
 }
 
 @media (max-width: 628px) {
@@ -558,9 +558,15 @@ nav .hamburger {
 }
 
 .current-season .cards .card {
-    text-align: center;
     max-width: 500px;
     height: auto;
+}
+
+.current-season .cards .card .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .current-season .cards .card .details {
@@ -570,6 +576,7 @@ nav .hamburger {
     background-color: var(--color-secondary);
     font-size: var(--fs-p);
     padding: 0.5rem 2rem;
+    margin-top: 1rem;
 }
 .current-season .cards .card .details:hover {
     background-color: #ed6e14d3;
