@@ -60,10 +60,6 @@ input, textarea {
     margin: 0 auto;
 }
 
-h1 {
-    margin-bottom: 1em;
-}
-
 /* **** ICONS **** */
 .fa-instagram
 .fa-instagram::before,
@@ -218,15 +214,17 @@ nav .hamburger {
 }
 
 .hero-text {
+    
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    
     font-size: 3rem;
     color: var(--color-accent);
-    padding: 0 1em;
+    /*margin: 0 1em; */
+    border-bottom: 5px solid var(--color-secondary);
 }
 
 
@@ -391,7 +389,7 @@ nav .hamburger {
 }
 
 .sub-units .sub-units-heading p {
-    margin-top: -1.25em;
+    margin-top: 1.25em;
     font-size: var(--fs-subheading);
     font-weight: var(--fw-light);
 }
@@ -433,6 +431,9 @@ nav .hamburger {
     align-items: center;
     gap: 1em;
     text-align: center;
+
+    padding: 1em;
+    box-shadow: 1px 1px 6px 6px var(--color-primary);
 }
 
 .icon {
@@ -596,6 +597,22 @@ nav .hamburger {
     font-size: var(--fs-p);
     font-weight: var(--fw-light);
 }
+
+.current-season .last-card-image {
+    max-width: 446px;
+    height: auto;
+}
+
+.current-season .cards.second-row {
+    gap: 3em;
+}
+
+@media (max-width: 1009px) {
+    .current-season .cards.second-row {
+        gap: 2em;
+    }
+}
+
 
 
 
