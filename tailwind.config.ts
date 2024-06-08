@@ -13,6 +13,12 @@ const config: Config = {
       tertiary: 'rgb(var(--color-tertiary) / <alpha-value>)',
       accent: 'rgb(var(--color-accent) / <alpha-value>)',
       accentDark: 'rgb(var(--color-accent-secondary) / <alpha-value>)',
+    },
+    extend: {
+      fontFamily: {
+        main: ['var(--font-bahnschrift)'],
+        inter: ['var(--font-inter)'],
+      },
     }
   },
   plugins: [],

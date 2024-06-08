@@ -3,9 +3,14 @@ import { Inter } from "next/font/google";
 import localFont from 'next/font/local';
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
-const bahnschrift = localFont({ src: "../../public/fonts/Bahnschrift-Font-Family/Bahnschrift.ttf" });
+const bahnschrift = localFont({ 
+  src: "../../public/fonts/Bahnschrift-Font-Family/bahnschrift.ttf",
+  variable: '--font-bahnschrift',
+});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "FRC 333 | The Megalodons",
@@ -19,8 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${bahnschrift.className} ${inter.className}`}>
+      <body className={`${bahnschrift.variable} font-main ${inter.className}`}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
