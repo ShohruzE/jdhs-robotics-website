@@ -7,9 +7,13 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      
-    },
+    colors: {
+      primary: 'rgb(var(--color-primary) / <alpha-value>)',
+      secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
+      tertiary: 'rgb(var(--color-tertiary) / <alpha-value>)',
+      accent: 'rgb(var(--color-accent) / <alpha-value>)',
+      accentDark: 'rgb(var(--color-accent-secondary) / <alpha-value>)',
+    }
   },
   plugins: [],
 };

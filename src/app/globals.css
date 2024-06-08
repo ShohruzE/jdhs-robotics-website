@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-primary: 0 0 0; /* #000000 */
+    --color-secondary: 255 255 255; /* #FFFFFF */
+    --color-tertiary: 252 137 23; /* #FC8917 */
+    --color-accent: 204 204 204; /* #CCCCCC */
+    --color-accent-secondary: 153 153 153; /* #999999 */
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
