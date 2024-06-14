@@ -1,0 +1,91 @@
+{
+    "seasons": [
+        {
+            "name": "CRESCENDO",
+            "year": 2024,
+            "route": "crescendo2024"
+        },
+        {
+            "name": "CHARGED UP",
+            "year": 2023,
+            "route": "charged-up2023"
+        },
+        {
+            "name": "RAPID REACT",
+            "year": 2022,
+            "route": "rapid-react2022"
+        },
+        {
+            "name": "INFINITE RECHARGE",
+            "year": 2020,
+            "route": "infinite-recharge2020"
+        },
+        {
+            "name": "DEEP SPACE",
+            "year": 2019,
+            "route": "deep-space2019"
+        },
+        {
+            "name": "POWER UP",
+            "year": 2018,
+            "route": "power-up2018"
+        },
+        {
+            "name": "STEAMWORKS",
+            "year": 2017,
+            "route": "steamworks2017"
+        },
+        {
+            "name": "STRONGHOLD",
+            "year": 2016,
+            "route": "stronghold2016"
+        },
+        {
+            "name": "RECYCLE RUSH",
+            "year": 2015,
+            "route": "recycle-rush2015"
+        },
+        {
+            "name": "AERIAL ASSIST",
+            "year": 2014,
+            "route": "aerial-assist2014"
+        },
+        {
+            "name": "ULTIMATE ASCENT",
+            "year": 2013,
+            "route": "ultimate-ascent2013"
+        },
+        {
+            "name": "REBOUND RUMBLE",
+            "year": 2012,
+            "route": "rebound-rumble2012"
+        },
+        {
+            "name": "STACK ATTACK",
+            "year": 2003,
+            "route": "stack-attack2003"
+        },
+        {
+            "name": "CO-OPERTITION FIRST",
+            "year": 2000,
+            "route": "coopertition-first2000"
+        },
+        {
+            "name": "DOUBLE TROUBLE",
+            "year": 1999,
+            "route": "double-trouble1999"
+        }
+    ],
+    "offSeasons": [
+        {
+            "name": "SWEET TOOTH",
+            "year": 2023,
+            "route": "sweet-tooth2023"
+        },
+        {
+            "name": "BIG TUNA",
+            "year": 2013,
+            "route": "big-tuna2013"
+        }
+    ]
+}
