@@ -13,7 +13,6 @@ const Navbar = () => {
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const pathname = usePathname();
-    console.log(pathname);
 
   return (
     <div>
@@ -31,27 +30,27 @@ const Navbar = () => {
             </div>
 
             <div>
-              <ul className="md:flex justify-end items-center flex-1 gap-16 text-xl font-bold">
+              <ul className="md:flex uppercase justify-end items-center flex-1 gap-16 text-xl font-bold">
                 <li>
-                  <Link href="/" className={`pb-1 hover:text-accent ${pathname === "/" ? "text-tertiary border-b-[3px] border-tertiary" : ""}`}>HOME</Link>
+                  <Link href="/" className={`pb-1 hover:text-accent ${pathname === "/" ? "text-tertiary border-b-[3px] border-tertiary" : ""}`}>Home</Link>
                 </li>
                 <li>
-                  <Link href="/about" className={`pb-1 hover:text-accent ${pathname === "/about" ? "text-tertiary border-b-[3px] border-tertiary" : ""}`}>ABOUT</Link>
+                  <Link href="/about" className={`pb-1 hover:text-accent ${pathname === "/about" ? "text-tertiary border-b-[3px] border-tertiary" : ""}`}>About</Link>
                 </li>
                 <li>
                   <button 
                     onMouseEnter={() => setIsDropdownOpen(true)}
                     /*onMouseLeave={() => setIsDropdownOpen(false)} */
                   >
-                    <Link href="/robots" className={`pb-1 hover:text-accent ${pathname === "/robots" ? "text-tertiary border-b-[3px] border-tertiary" : ""}`}>ROBOTS</Link>
+                    <Link href="/robots" className={`pb-1 uppercase hover:text-accent ${pathname === "/robots" ? "text-tertiary border-b-[3px] border-tertiary" : ""}`}>Robots</Link>
                   </button>
                 </li>
                 <li>
-                  <Link href="https://eversharkny.com/" target="_blank" className="hover:text-accent">MERCH</Link>
+                  <Link href="https://eversharkny.com/" target="_blank" className="hover:text-accent">Merch</Link>
                 </li>
                 <li>
-                  <button className="bg-secondary text-primary px-6 py-1 rounded-lg hover:bg-accent">
-                    <Link href="#">CONTACT</Link>
+                  <button className="bg-secondary text-primary uppercase px-6 py-1 rounded-lg hover:bg-accent">
+                    <Link href="#">Contact</Link>
                   </button>
                 </li>
               </ul>
