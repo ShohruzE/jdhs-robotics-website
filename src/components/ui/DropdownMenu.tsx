@@ -18,7 +18,7 @@ const DropdownMenu = ({ isDropdownOpen, setIsDropdownOpen }: DropdownMenuProps) 
     <div 
       onMouseEnter={() => setIsDropdownOpen(true)}
       onMouseLeave={() => setIsDropdownOpen(false)}
-      className="w-full bg-secondary text-primary border-b-2 border-primary py-16"
+      className="absolute z-10 w-full bg-secondary text-primary border-b-2 border-primary py-16"
     >
       <div className="container mx-auto">
         <div className="flex justify-center items-center gap-12">
