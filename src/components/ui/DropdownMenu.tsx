@@ -30,9 +30,9 @@ const DropdownMenu = ({ isDropdownOpen, setIsDropdownOpen }: DropdownMenuProps) 
               <h3 className={`text-accent py-10 pr-10 border-r-4 rounded hover:text-primary ${isOffSeasonSelected ? "border-tertiary text-primary" : "border-inherit"}`}>OFF-SEASON</h3>
             </button>
           </div>
-          <div className="grid grid-cols-4 items-center gap-6 text-xl hover:text-primary">
+          <div className="grid grid-cols-4 items-center gap-y-6 gap-x-10 text-xl hover:text-primary">
               {!isOffSeasonSelected && robotLinks.seasons.map((season, index) => (
-                <Link key={index} href={`robots/${season.route}`} className="group mr-4">
+                <Link key={index} href={`robots/${season.route}`} className="group">
                   <span className="font-thin text-accentDark group-hover:text-primary">{season.year} </span> 
                   <span className="font-bold text-accentDark group-hover:text-primary">{season.name}</span>
                 </Link>
