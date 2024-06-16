@@ -71,7 +71,8 @@ const Carousel = ({ images, autoSlide = false, autoSlideInterval = 5000 }: Carou
           <button 
             key={index}
             onClick={() => setImageIndex(index)}
-            className={`w-32 h-3 bg-primary hover:bg-accent transition-all ${imageIndex === index ? "bg-secondary" : ""}`}
+            onMouseEnter={() => clearInterval(autoSlideInterval)}
+            className={`w-40 h-3 bg-[rgb(255,255,255,0.5)] hover:bg-secondary transition-all ${imageIndex === index ? "bg-[rgb(255,255,255)]" : ""}`}
           />
         ))}
       </div>
