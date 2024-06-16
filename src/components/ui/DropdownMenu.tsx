@@ -18,10 +18,10 @@ const DropdownMenu = ({ isDropdownOpen, setIsDropdownOpen }: DropdownMenuProps) 
     <div 
       onMouseEnter={() => setIsDropdownOpen(true)}
       onMouseLeave={() => setIsDropdownOpen(false)}
-      className="absolute z-10 w-full bg-secondary text-primary border-b-2 border-primary py-16"
+      className="absolute z-10 w-full bg-secondary text-primary border-b-2 border-primary py-8"
     >
       <div className="container mx-auto">
-        <div className="flex justify-center items-center gap-12">
+        <div className="flex items-center gap-10">
           <div className="flex flex-col text-2xl font-bold">
             <button onClick={() => setIsOffSeasonSelected(false)}>
               <h3 className={`text-accent py-10 pr-10 border-r-4 rounded hover:text-primary ${!isOffSeasonSelected ? "border-tertiary text-primary" : "border-inherit"}`}>COMPETITION</h3>
@@ -30,9 +30,9 @@ const DropdownMenu = ({ isDropdownOpen, setIsDropdownOpen }: DropdownMenuProps) 
               <h3 className={`text-accent py-10 pr-10 border-r-4 rounded hover:text-primary ${isOffSeasonSelected ? "border-tertiary text-primary" : "border-inherit"}`}>OFF-SEASON</h3>
             </button>
           </div>
-          <div className="grid grid-cols-3 gap-6 text-xl hover:text-primary">
+          <div className="grid grid-cols-4 items-center gap-6 text-xl hover:text-primary">
               {!isOffSeasonSelected && robotLinks.seasons.map((season, index) => (
-                <Link key={index} href={`robots/${season.route}`} className="group">
+                <Link key={index} href={`robots/${season.route}`} className="group mr-4">
                   <span className="font-thin text-accentDark group-hover:text-primary">{season.year} </span> 
                   <span className="font-bold text-accentDark group-hover:text-primary">{season.name}</span>
                 </Link>
