@@ -17,3 +17,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-100% - 4rem));
+  }
+}
+
+.animate-scroll2 {
+  animation: scroll 20s infinite linear;
+}
+
+.sponsor-bar:hover .animate-scroll2 {
+  animation-play-state: paused;
+}
