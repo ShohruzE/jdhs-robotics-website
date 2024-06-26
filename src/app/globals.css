@@ -25,7 +25,7 @@
 }
 
 .animate-scroll2 {
-  animation: scroll 20s infinite linear;
+  animation: scroll 50s infinite linear;
 }
 
 .sponsor-bar:hover .animate-scroll2 {
