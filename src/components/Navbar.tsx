@@ -22,10 +22,12 @@ const Navbar = () => {
             <div className="logo">
               <Link href="/">
                 <Image 
-                src={logoWithText} 
-                alt="FRC 333"
-                width={131}
-                height={52} />
+                  src={logoWithText} 
+                  alt="FRC 333"
+                  width={131}
+                  height={52}
+                  className=""
+                />
               </Link>
             </div>
 
