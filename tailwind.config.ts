@@ -10,6 +10,7 @@ const config: Config = {
     colors: {
       primary: 'rgb(var(--color-primary) / <alpha-value>)',
       secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
+      secondaryOpaque: 'rgb(var(--color-secondary) / 0.5)',
       tertiary: 'rgb(var(--color-tertiary) / <alpha-value>)',
       accent: 'rgb(var(--color-accent) / <alpha-value>)',
       accentDark: 'rgb(var(--color-accent-secondary) / <alpha-value>)',
