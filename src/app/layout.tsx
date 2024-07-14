@@ -15,6 +15,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "FRC 333 | The Megalodons",
   description: "Official website of FRC Team 333, The Megalodons. Founded in 1998, the John Dewey High School robotics team aims to equip a community of students passionate about science and technology with the skills and initiative to become the next generation of leaders and create positive change in their respective career fields.",
+  icons: {
+    icon: "./icon.svg"
+  }
 };
 
 export default function RootLayout({
