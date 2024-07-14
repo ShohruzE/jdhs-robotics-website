@@ -23,9 +23,11 @@ type ImageProps = {
   content: {
     imageHeaderSrc?: StaticImageData | undefined
     title?: string
-    description: string
-    buttonText: string
-    buttonLink: string
+    description?: string
+    buttonText?: string | undefined
+    buttonText2?: string | undefined
+    buttonLink?: string | undefined
+    buttonLink2?: string | undefined
   }
 }
 
@@ -88,12 +90,21 @@ const Carousel = ({ images, autoSlide = false, autoSlideInterval = 5000 }: Carou
                 {image.content.title && (
                   <h1 className={`${image.styles.titleStyles}`}>{image.content.title}</h1>
                 )}
-                <div className={`${image.styles.captionStyles}`}>
-                  <p className="font-light text-2xl text-secondary">{image.content.description}</p>
-                  <button className="bg-secondary text-primary font-bold text-xl px-12 py-1 rounded-lg hover:bg-accent">
-                    <Link href={`${image.content.buttonLink}`}>{image.content.buttonText}</Link>
-                  </button>
+                {image.content.description && (
+                  <div className={`${image.styles.captionStyles}`}>
+                    <p className="font-light text-2xl text-secondary">{image.content.description}</p>
+                    <button className="bg-secondary text-primary font-bold text-xl px-12 py-1 rounded-lg hover:bg-accent">
+                      <Link href={`${image.content.buttonLink}`}>{image.content.buttonText}</Link>
+                    </button>
                 </div>
+                )}
+                {/* If on first slide, render special robo replay banner */}
+                {image.content.buttonText2 && (
+                  <div className={`${image.styles.captionStyles}`}>
+                    <Link href="https://sites.google.com/view/roboreplay24/registration?authuser=0" target="_blank" className="w-full bg-secondary text-primary font-black text-2xl uppercase drop-shadow-2xl py-[2px] hover:bg-primary hover:text-secondary">Register</Link>
+                    <Link href="https://sites.google.com/view/roboreplay24/volunteer?authuser=0" target="_blank" className="w-full bg-[rgb(200,166,77)] text-secondary font-black text-2xl uppercase drop-shadow-2xl py-[2px] hover:bg-primary hover:text-secondary">Volunteer</Link>
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -119,7 +130,7 @@ const Carousel = ({ images, autoSlide = false, autoSlideInterval = 5000 }: Carou
               key={index}
               onClick={() => setImageIndex(index)}
               onMouseEnter={() => clearInterval(autoSlideInterval)}
-              className={`w-40 h-3 ${imageIndex == index ? "bg-secondary" : "bg-secondaryOpaque"} hover:bg-secondary transition duration-1000 ease-in-out delay-200`}
+              className={`w-40 h-3 ${imageIndex == index ? "bg-secondary" : "bg-secondaryOpaque"} hover:bg-secondary transition duration-1000 ease-in-out`}
             />
           ))}
         </div>

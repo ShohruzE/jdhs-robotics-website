@@ -6,12 +6,28 @@ import hero3 from '../../public/images/hero-3.png'
 import logoWithText from '../../public/images/2024-frc-333-logo-with-text.png'
 import hammerheadHeroLogo from '../../public/images/hammer-head-logo-transparent.png';
 import sponsorHeroText from '../../public/images/sponsor-hero-text.png';
+import roboReplayBanner from '../../public/images/robo-replay-banner.png';
 
 import Carousel from './ui/Carousel'
 
 const Hero = () => {
 
   const IMAGES = [
+    {
+      "imageSrc": roboReplayBanner,
+      "styles": {
+        "format": "w-full flex justify-center items-center",
+        "imageHeaderWidth": 568,
+        "imageHeaderHeight": 225,
+        "captionStyles": "w-1/2 flex justify-center items-center text-center drop-shadow-2xl"
+      },
+      "content": {
+          "buttonText": "Register",
+          "buttonText2": "Volunteer",
+          "buttonLink": "https://sites.google.com/view/roboreplay24/registration",
+          "buttonLink2": "https://sites.google.com/view/roboreplay24/volunteer"
+      }
+    },
     {
         "imageSrc": hero1,
         "styles": {
@@ -64,7 +80,7 @@ const Hero = () => {
     <div>
       <Carousel 
         images={IMAGES} 
-        autoSlide={true}
+        autoSlide={false}
         autoSlideInterval={10_000}
       />
     </div>
